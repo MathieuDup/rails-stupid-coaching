@@ -1,8 +1,14 @@
 <h1>Stupid Coaching</h1>
 
-<%= @question %>
+<div>
+  <p><%= @question %></p>
+  <p class="sender">@You</p>
+</div>
 <br>
-<%= @answer %>
+<div>
+  <p><%= @answer %></p>
+  <p class="sender">@Coach</p>
+</div>
 <br>
 
 <%= link_to "Ask another question", "/ask" %>
